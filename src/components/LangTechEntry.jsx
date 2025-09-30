@@ -1,0 +1,23 @@
+import Anchor from "../assets/anchor.svg";
+
+import Python from "../assets/python-logo.svg";
+
+const ProgLangImg = (name) => {
+  switch (name) {
+    case "Python":
+      return <img src={Python} alt={name} />;
+    default:
+      return <img src={Anchor} alt='No logo' />;
+  }
+};
+
+export default function LangTechEntry({ name, description, related = "None" }) {
+  return (
+    <div>
+      {ProgLangImg(name)}
+      <h3>{name}</h3>
+      <p>{description}</p>
+      <p>Related: {related}</p>
+    </div>
+  );
+}

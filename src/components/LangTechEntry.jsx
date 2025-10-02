@@ -13,11 +13,15 @@ const ProgLangImg = (name) => {
 
 export default function LangTechEntry({ name, description, related = "None" }) {
   return (
-    <div>
-      {ProgLangImg(name)}
-      <h3>{name}</h3>
-      <p>{description}</p>
-      <p>Related: {related}</p>
+    <div className='langentry'>
+      <div>
+        {ProgLangImg(name)}
+        <h3>{name}</h3>
+      </div>
+      <div>
+        <p>{description}</p>
+        <p>Related Languages & Technologies: {related}</p>
+      </div>
     </div>
   );
 }

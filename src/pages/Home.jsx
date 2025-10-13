@@ -1,8 +1,6 @@
-import LangTechEntry from "../components/LangTechEntry";
+import LangEntry from "../components/LangEntry";
 
 export default function Home() {
-  /* Python, HTML, CSS, JavaScript (sub: TypeScript, Node.js, Express.js), 
-  React (sub: Preact), Java (sub: Spring Boot, JUnit) */
   /* SQL (sub: PostgreSQL, MySQL), NoSQL (sub: MongoDB), Docker, GitHub, AWS (not certified yet)*/
   /* Research, Analysis, Process Flow Diagrams, (anything else from CPET)*/
   /* Any projects I've done, including this very portfolio */
@@ -41,10 +39,35 @@ export default function Home() {
       <article>
         <section>
           <h2>Programming Languages</h2>
-          <LangTechEntry
-            name='Python'
-            description='Educated in the fundamentals of Python.'
-          />
+          <div className='langentrybox'>
+            <LangEntry
+              name='HTML'
+              description='Familiar with HTML as the structure of a webpage.'
+            />
+            <LangEntry
+              name='CSS'
+              description='Tinkered with CSS to ensure the best look for a webpage.'
+            />
+            <LangEntry
+              name='JavaScript'
+              description='Educated in and familiar with JavaScript and some of its technologies, frameworks, and derivatives.'
+              related='TypeScript, Node.js, Express.js'
+            />
+            <LangEntry
+              name='React'
+              description='Experienced and educated with the React framework and one of its derivatives, Preact.'
+              related='Preact'
+            />
+            <LangEntry
+              name='Java'
+              description='Educated in Java as a backend API language with Spring Boot and testing with JUnit.'
+              related='Spring Boot, JUnit'
+            />
+            <LangEntry
+              name='Python'
+              description='Educated in the fundamentals of Python.'
+            />
+          </div>
         </section>
         <section>
           <h2>Technologies</h2>

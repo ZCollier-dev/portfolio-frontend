@@ -59,6 +59,12 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.langentrybox {
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: black;
+}
+
 .langentry {
   border-top: 1px solid;
   border-bottom: 1px solid;
@@ -86,6 +92,10 @@ button:focus-visible {
   button {
     color: #0C1636FF;
     background-color: #E0E0E0FF;
+  }
+
+  .langentrybox {
+    border-color: white;
   }
 
   .langentry {

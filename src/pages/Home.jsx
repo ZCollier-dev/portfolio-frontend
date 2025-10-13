@@ -1,4 +1,7 @@
-import LangEntry from "../components/LangEntry";
+import { lazy } from "preact-iso";
+
+const LangEntry = lazy(() => import("../components/LangEntry"));
+const TechEntry = lazy(() => import("../components/TechEntry"));
 
 export default function Home() {
   /* SQL (sub: PostgreSQL, MySQL), NoSQL (sub: MongoDB), Docker, GitHub, AWS (not certified yet)*/
@@ -71,6 +74,13 @@ export default function Home() {
         </section>
         <section>
           <h2>Technologies</h2>
+          <div className='langentrybox'>
+            <TechEntry
+              name='SQL'
+              description='Familiar with SQL relational databases'
+              related='MySQL, PostgreSQL'
+            />
+          </div>
         </section>
         <section>
           <h2>Other Skills</h2>

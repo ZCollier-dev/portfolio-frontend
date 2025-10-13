@@ -26,14 +26,7 @@ const ProgLangImg = (name) => {
   }
 };
 
-/* Python, HTML, CSS, JavaScript (sub: TypeScript, Node.js, Express.js), 
-  React (sub: Preact), Java (sub: Spring Boot, JUnit) */
-/* SQL (sub: PostgreSQL, MySQL), NoSQL (sub: MongoDB), Docker, GitHub, AWS (not certified yet)*/
-/* Research, Analysis, Process Flow Diagrams, (anything else from CPET)*/
-/* Any projects I've done, including this very portfolio */
-/* Any employment I've gotten. Data Farms as an Intern, Rambler as a Co-Op Work Term*/
-
-export default function LangTechEntry({ name, description, related = "None" }) {
+export default function LangEntry({ name, description, related = "None" }) {
   return (
     <div className='langentry'>
       <div>

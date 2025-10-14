@@ -3,7 +3,7 @@ import Anchor from "../assets/anchor.svg";
 import SqlLogo from "../assets/sql-logo.svg";
 import MongoLogo from "../assets/mongodb-logo.svg";
 import DockerLogo from "../assets/docker-logo.svg";
-import GithubLogo from "../assets/github-logo.svg";
+import GitLogo from "../assets/git-logo.svg";
 import AwsLogo from "../assets/aws-logo.png";
 
 /* SQL (sub: PostgreSQL, MySQL), MongoDB, Docker, GitHub, AWS (not certified yet)*/
@@ -15,6 +15,14 @@ const TechImg = (name) => {
   switch (name) {
     case "SQL":
       return <img src={SqlLogo} alt={name} />;
+    case "MongoDB":
+      return <img src={MongoLogo} alt={name} />;
+    case "Docker":
+      return <img src={DockerLogo} alt={name} />;
+    case "Git":
+      return <img src={GitLogo} alt={name} />;
+    case "AWS":
+      return <img src={AwsLogo} alt={name} />;
     default:
       return <img src={Anchor} alt='No logo' />;
   }

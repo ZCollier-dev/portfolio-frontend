@@ -4,7 +4,6 @@ const LangEntry = lazy(() => import("../components/LangEntry"));
 const TechEntry = lazy(() => import("../components/TechEntry"));
 
 export default function Home() {
-  /* SQL (sub: PostgreSQL, MySQL), NoSQL (sub: MongoDB), Docker, GitHub, AWS (not certified yet)*/
   /* Research, Analysis, Process Flow Diagrams, (anything else from CPET)*/
   /* Any projects I've done, including this very portfolio */
   /* Any employment I've gotten. Data Farms as an Intern, Rambler as a Co-Op Work Term*/
@@ -79,6 +78,25 @@ export default function Home() {
               name='SQL'
               description='Familiar with SQL relational databases'
               related='MySQL, PostgreSQL'
+            />
+            <TechEntry
+              name='MongoDB'
+              description='Familiar with the non-relational database MongoDB'
+            />
+            <TechEntry
+              name='Docker'
+              description='Familiar with app containerization through Docker'
+              related='Docker Desktop'
+            />
+            <TechEntry
+              name='Git'
+              description='Familiarity with Git through GitHub - all projects are hosted through GitHub'
+              related='GitHub'
+            />
+            <TechEntry
+              name='AWS'
+              description='Familiar with AWS services.'
+              related='S3, EC2, RDS...'
             />
           </div>
         </section>

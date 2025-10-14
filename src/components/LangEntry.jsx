@@ -5,7 +5,7 @@ import HtmlLogo from "../assets/HTML5-Logo.png";
 import CssLogo from "../assets/css3-logo.png";
 import JavascriptLogo from "../assets/JavaScript-logo.png";
 import ReactLogo from "../assets/React-logo.png";
-import JavaLogo from "../assets/java-logo.png";
+import JavaLogo from "../assets/java-logo.svg";
 
 const ProgLangImg = (name) => {
   switch (name) {

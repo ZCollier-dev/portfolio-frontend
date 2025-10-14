@@ -79,6 +79,7 @@ button:focus-visible {
 
 .langentry img {
   height: 64px;
+  margin: 8px;
 }
 
 @media (prefers-color-scheme: light) {

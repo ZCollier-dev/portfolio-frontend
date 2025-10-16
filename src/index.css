@@ -82,6 +82,21 @@ button:focus-visible {
   margin: 8px;
 }
 
+.otherentrybox {
+  display: flex;
+  place-content: center;
+}
+
+.otherentry {
+  display: flex;
+  place-items: center;
+}
+
+.otherentry img {
+  height: 32px;
+  margin: 4px;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #E0E0E0FF;

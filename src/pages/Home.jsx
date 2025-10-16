@@ -2,6 +2,8 @@ import { lazy } from "preact-iso";
 
 const LangEntry = lazy(() => import("../components/LangEntry"));
 const TechEntry = lazy(() => import("../components/TechEntry"));
+const SkillEntry = lazy(() => import("../components/SkillEntry"));
+const OtherEntry = lazy(() => import("../components/OtherEntry"));
 
 export default function Home() {
   /* Research, Analysis, Process Flow Diagrams, (anything else from CPET)*/
@@ -97,6 +99,35 @@ export default function Home() {
               name='AWS'
               description='Familiar with AWS services.'
               related='S3, EC2, RDS...'
+            />
+          </div>
+        </section>
+        <section>
+          <h2>Soft Skills</h2>
+          <div className='langentrybox'>
+            <SkillEntry
+              name='Leadership'
+              description="A leader is the anchor point for a team to revolve around. Ensuring that a team and their skills mesh well together should be a leader's top priority."
+            />
+            <SkillEntry
+              name='Communication'
+              description='Ideas need to be shared with a team. Communication, whether through text, imagery, or speech, allows the effective transfer of skill and knowledge.'
+            />
+            <SkillEntry
+              name='Problem Solving'
+              description='A clear direction or a series of seemingly diconnected questions, each problem is a unique and challenging puzzle to solve.'
+            />
+            <SkillEntry
+              name='Persistence'
+              description='Sometimes, a project may experience difficulties or setbacks. It is important to maintain a level head through turbulence and move forward with the lessons learned.'
+            />
+            <SkillEntry
+              name='Critical Thinking'
+              description='With the deluge of information we have at our fingertips today, it is more important than ever to ask questions and challenge potential solutions, established or otherwise.'
+            />
+            <SkillEntry
+              name='Professionalism'
+              description='Professionalism consists of many different factors, such as physical presentation and organization, accountability, humility, reliability, and punctuality. Be polite and efficient.'
             />
           </div>
         </section>

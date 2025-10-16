@@ -37,7 +37,7 @@ export default function TechEntry({ name, description, related = "None" }) {
       </div>
       <div>
         <p>{description}</p>
-        <p>Related Languages & Technologies: {related}</p>
+        <p>Related Technologies: {related}</p>
       </div>
     </div>
   );

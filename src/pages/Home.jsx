@@ -1,9 +1,11 @@
 import { lazy } from "preact-iso";
 
-const LangEntry = lazy(() => import("../components/LangEntry"));
-const TechEntry = lazy(() => import("../components/TechEntry"));
-const SkillEntry = lazy(() => import("../components/SkillEntry"));
-const OtherEntry = lazy(() => import("../components/OtherEntry"));
+const LangEntries = lazy(() => import("../components/LangEntries"));
+const TechEntries = lazy(() => import("../components/TechEntries"));
+const SkillEntries = lazy(() => import("../components/SkillEntries"));
+const OtherEntries = lazy(() => import("../components/OtherEntries"));
+const ProjectEntries = lazy(() => import("../components/ProjectEntries"));
+const EmploymentEntries = lazy(() => import("../components/EmploymentEntries"));
 
 export default function Home() {
   /* Research, Analysis, Process Flow Diagrams, (anything else from CPET)*/
@@ -33,114 +35,40 @@ export default function Home() {
           to new approaches to a new and novel problem, bolstered by a strong
           capability for research.
           <br />
-          <br />I use Linux as a daily driver. While I'm more of a casual user,
-          more than once have I had to diagnose an issue, adjust workflow,
-          and/or implement a fix for my system. I enjoy the privacy and freedom
-          Linux grants me - if there is a problem, it can be addressed with a
-          little effort.
+          <br />I use Linux as a daily driver, alongside a Windows Virtual
+          Machine through WinBoat for Windows-only applications. While I'm more
+          of a casual user, more than once have I had to diagnose an issue,
+          adjust workflow, and/or implement a fix for my system. I enjoy the
+          privacy and freedom Linux grants me - if there is a problem, it can be
+          addressed with a little effort.
         </p>
       </article>
       <article>
         <section>
           <h2>Programming Languages</h2>
-          <div className='langentrybox'>
-            <LangEntry
-              name='HTML'
-              description='Familiar with HTML as the structure of a webpage.'
-            />
-            <LangEntry
-              name='CSS'
-              description='Tinkered with CSS to ensure the best look for a webpage.'
-            />
-            <LangEntry
-              name='JavaScript'
-              description='Educated in and familiar with JavaScript and some of its technologies, frameworks, and derivatives.'
-              related='TypeScript, Node.js, Express.js'
-            />
-            <LangEntry
-              name='React'
-              description='Experienced and educated with the React framework and one of its derivatives, Preact.'
-              related='Preact'
-            />
-            <LangEntry
-              name='Java'
-              description='Educated in Java as a backend API language with Spring Boot and testing with JUnit.'
-              related='Spring Boot, JUnit'
-            />
-            <LangEntry
-              name='Python'
-              description='Educated in the fundamentals of Python.'
-            />
-          </div>
+          <LangEntries />
         </section>
         <section>
           <h2>Technologies</h2>
-          <div className='langentrybox'>
-            <TechEntry
-              name='SQL'
-              description='Familiar with SQL relational databases'
-              related='MySQL, PostgreSQL'
-            />
-            <TechEntry
-              name='MongoDB'
-              description='Familiar with the non-relational database MongoDB'
-            />
-            <TechEntry
-              name='Docker'
-              description='Familiar with app containerization through Docker'
-              related='Docker Desktop'
-            />
-            <TechEntry
-              name='Git'
-              description='Familiarity with Git through GitHub - all projects are hosted through GitHub'
-              related='GitHub'
-            />
-            <TechEntry
-              name='AWS'
-              description='Familiar with AWS services.'
-              related='S3, EC2, RDS...'
-            />
-          </div>
+          <TechEntries />
         </section>
         <section>
           <h2>Soft Skills</h2>
-          <div className='langentrybox'>
-            <SkillEntry
-              name='Leadership'
-              description="A leader is the anchor point for a team to revolve around. Ensuring that a team and their skills mesh well together should be a leader's top priority."
-            />
-            <SkillEntry
-              name='Communication'
-              description='Ideas need to be shared with a team. Communication, whether through text, imagery, or speech, allows the effective transfer of skill and knowledge.'
-            />
-            <SkillEntry
-              name='Problem Solving'
-              description='A clear direction or a series of seemingly diconnected questions, each problem is a unique and challenging puzzle to solve.'
-            />
-            <SkillEntry
-              name='Persistence'
-              description='Sometimes, a project may experience difficulties or setbacks. It is important to maintain a level head through turbulence and move forward with the lessons learned.'
-            />
-            <SkillEntry
-              name='Critical Thinking'
-              description='With the deluge of information we have at our fingertips today, it is more important than ever to ask questions and challenge potential solutions, established or otherwise.'
-            />
-            <SkillEntry
-              name='Professionalism'
-              description='Professionalism consists of many different factors, such as physical presentation and organization, accountability, humility, reliability, and punctuality. Be polite and efficient.'
-            />
-          </div>
+          <SkillEntries />
         </section>
         <section>
           <h2>Other Skills</h2>
+          <OtherEntries />
         </section>
       </article>
       <article>
         <section>
           <h2>Projects</h2>
+          <ProjectEntries />
         </section>
         <section>
           <h2>Employment</h2>
+          <EmploymentEntries />
         </section>
       </article>
     </main>

@@ -4,21 +4,14 @@ import ProjectButton from "./ProjectButton";
 export default function ProjectEntry({
   name,
   description,
-  skillsArray,
+  skillsArray = ["None"],
   buttonArray,
 }) {
   return (
     <div>
       <h3>{name}</h3>
       <p>{description}</p>
-      <p>
-        Skills Used:
-        <ul>
-          {skillsArray.map((skill, index) => (
-            <li key={index}>{skill}</li>
-          ))}
-        </ul>
-      </p>
+      <p>Skills Used: {skillsArray.join(", ")}</p>
       <div>
         {buttonArray.map((button, index) => (
           <ProjectButton key={index} name={button.name} route={button.route} />

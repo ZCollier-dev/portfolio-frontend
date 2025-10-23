@@ -1,4 +1,4 @@
-import Anchor from "../assets/anchor.svg";
+import Anchor from "../assets/anchor.png";
 
 import SqlLogo from "../assets/sql-logo.svg";
 import MongoLogo from "../assets/mongodb-logo.svg";

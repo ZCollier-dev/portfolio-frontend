@@ -1,4 +1,4 @@
-import Anchor from "../assets/anchor.svg";
+import Anchor from "../assets/anchor.png";
 
 import PythonLogo from "../assets/python-logo.svg";
 import HtmlLogo from "../assets/HTML5-Logo.png";

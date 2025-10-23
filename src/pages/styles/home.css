@@ -1,0 +1,48 @@
+.langentrybox {
+  border-top: 1px solid;
+  border-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  place-content: center;
+  gap: 1em;
+}
+
+.langentry {
+  border-bottom: 1px solid;
+  border-color: black;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  display: flex;
+  place-items: center;
+  place-content: left;
+  gap: 1em;
+  width: 45%;
+}
+
+.langentry img {
+  height: 64px;
+  margin: 8px;
+}
+
+.otherentrybox {
+  display: flex;
+  place-content: center;
+  flex-wrap: wrap;
+}
+
+.otherentry {
+  display: flex;
+  place-items: center;
+}
+
+.otherentry img {
+  height: 32px;
+  margin: 4px;
+}
+
+@media (max-width: 720px){
+  .langentry {
+    width: 100%;
+    place-content: center;
+  }
+}

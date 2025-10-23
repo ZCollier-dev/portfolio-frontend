@@ -1,4 +1,4 @@
-import Anchor from "../assets/anchor.svg";
+import Anchor from "../assets/anchor.png";
 
 /* This is where all other skills reside. No explanations, just their names */
 

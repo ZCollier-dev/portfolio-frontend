@@ -1,6 +1,7 @@
 // preact-iso is the routing equivalent for preact - https://preactjs.com/guide/v10/preact-iso/
 
 import "./app.css";
+import Anchor from "./assets/anchor.png";
 
 import {
   LocationProvider,
@@ -22,6 +23,7 @@ const Contact = lazy(() => import("./pages/Contact"));
 export function App() {
   return (
     <>
+      <img src={Anchor} className='anchorbg' />
       <Head />
       <LocationProvider>
         <ErrorBoundary>

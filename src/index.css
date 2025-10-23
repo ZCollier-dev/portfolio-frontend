@@ -28,7 +28,6 @@ a:hover {
 }
 
 body {
-  margin: 0;
   display: flex;
   place-items: center;
   min-width: 320px;
@@ -59,67 +58,44 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-.langentrybox {
-  border-top: 1px solid;
-  border-bottom: 1px solid;
-  border-color: black;
+.anchorbg {
+  width: 50%;
+  position: fixed;
+  right: 0%;
+  top: 0%;
+  opacity: 5%;
+  z-index: -1;
 }
 
-.langentry {
-  border-top: 1px solid;
-  border-bottom: 1px solid;
-  border-color: black;
+header {
+  display: flex;
+  place-items: center;
+  place-content: center;
+  width: 100%;
+  padding-bottom: 3em;
   padding-top: 1em;
-  padding-bottom: 1em;
-  display: flex;
-  place-items: center;
-  place-content: center;
-  gap: 1em;
+  gap: 0.5em;
 }
 
-.langentry img {
+header img {
   height: 64px;
-  margin: 8px;
 }
 
-.otherentrybox {
+nav {
+  margin-left: 2em;
   display: flex;
-  place-content: center;
+  gap: 0.5em;
 }
 
-.otherentry {
-  display: flex;
-  place-items: center;
+section {
+  margin-top: 1em;
 }
 
-.otherentry img {
-  height: 32px;
-  margin: 4px;
+section h2 {
+  margin-bottom: 0.5em;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #E0E0E0FF;
-    background-color: #0C1636FF;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    color: #0C1636FF;
-    background-color: #E0E0E0FF;
-  }
-
-  .langentrybox {
-    border-color: white;
-  }
-
-  .langentry {
-    border-color: white;
-  }
-}
-
-@media (max-width: 540px){
+@media (max-width: 720px){
   h1 {
     line-height: 1;
   }

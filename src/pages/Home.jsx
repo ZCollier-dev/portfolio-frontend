@@ -1,3 +1,5 @@
+import "./styles/home.css";
+
 import { lazy } from "preact-iso";
 
 const LangEntries = lazy(() => import("../components/LangEntries"));

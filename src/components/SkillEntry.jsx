@@ -1,4 +1,4 @@
-import Anchor from "../assets/anchor.svg";
+import Anchor from "../assets/anchor.png";
 
 /* Research, Analysis, Process Flow Diagrams, (anything else from CPET)*/
 /* Any projects I've done, including this very portfolio */

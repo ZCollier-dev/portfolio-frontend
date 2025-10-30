@@ -27,7 +27,7 @@ export default function SkillEntries() {
       />
       <SkillEntry
         name='Professionalism'
-        description='Professionalism consists of many different factors, such as physical presentation and organization, accountability, humility, reliability, and punctuality. Be polite and efficient.'
+        description='Professionalism consists of many different factors, such as physical presentation and organization, accountability, humility, reliability, and punctuality.'
       />
     </div>
   );

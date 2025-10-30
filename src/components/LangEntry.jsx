@@ -1,4 +1,4 @@
-import Anchor from "../assets/anchor.png";
+import Anchor from "../assets/anchor-white.png";
 
 import PythonLogo from "../assets/python-logo.svg";
 import HtmlLogo from "../assets/HTML5-Logo.png";
@@ -6,6 +6,10 @@ import CssLogo from "../assets/css3-logo.png";
 import JavascriptLogo from "../assets/JavaScript-logo.png";
 import ReactLogo from "../assets/React-logo.png";
 import JavaLogo from "../assets/java-logo.svg";
+
+import EntryDescription from "./EntryDescription";
+
+import { useSignal } from "@preact/signals";
 
 const ProgLangImg = (name) => {
   switch (name) {
@@ -26,16 +30,40 @@ const ProgLangImg = (name) => {
   }
 };
 
+const HandleClick = (currentState) => {
+  if (currentState) {
+    return false;
+  } else {
+    return true;
+  }
+};
+
 export default function LangEntry({ name, description, related = "None" }) {
+  const isDescDisplayed = useSignal(false);
+
   return (
-    <div className='langentry'>
-      <div>
+    <div
+      className='langentry'
+      onClick={() => {
+        isDescDisplayed.value = HandleClick(isDescDisplayed.value);
+      }}
+    >
+      <div className='langentryleft'>
         {ProgLangImg(name)}
-        <h3>{name}</h3>
+        <h4>{name}</h4>
       </div>
-      <div>
-        <p>{description}</p>
-        <p>Related Languages & Technologies: {related}</p>
+      {isDescDisplayed.value ? (
+        <div className='langentrydesc'>
+          <EntryDescription
+            description={description}
+            related={"Related Languages & Technologies: " + related}
+          />
+        </div>
+      ) : (
+        <></>
+      )}
+      <div className='langentryright'>
+        {isDescDisplayed.value ? <p>&#11164;</p> : <p>&#11166;</p>}
       </div>
     </div>
   );

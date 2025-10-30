@@ -10,8 +10,11 @@
   },
   "dependencies": {
     "@preact/signals": "^2.3.1",
+    "motion": "^12.23.24",
     "preact": "^10.27.0",
-    "preact-iso": "^2.10.0"
+    "preact-iso": "^2.10.0",
+    "react": "npm:@preact/compat",
+    "react-dom": "npm:@preact/compat"
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.10.2",

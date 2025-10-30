@@ -1,4 +1,6 @@
-import Anchor from "../assets/anchor.png";
+import Anchor from "../assets/anchor-white.png";
+
+import EntryDescription from "./EntryDescription";
 
 /* Research, Analysis, Process Flow Diagrams, (anything else from CPET)*/
 /* Any projects I've done, including this very portfolio */
@@ -7,12 +9,12 @@ import Anchor from "../assets/anchor.png";
 export default function SkillEntry({ name, description }) {
   return (
     <div className='langentry'>
-      <div>
+      <div className='langentryleft'>
         <img src={Anchor} alt='No logo' />
-        <h3>{name}</h3>
+        <h4>{name}</h4>
       </div>
-      <div>
-        <p>{description}</p>
+      <div className='langentrydesc'>
+        <EntryDescription description={description} />
       </div>
     </div>
   );

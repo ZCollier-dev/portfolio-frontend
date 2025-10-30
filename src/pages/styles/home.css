@@ -4,24 +4,48 @@
   display: flex;
   flex-wrap: wrap;
   place-content: center;
-  gap: 1em;
+  gap: 16px;
 }
 
 .langentry {
-  border-bottom: 1px solid;
-  border-color: black;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  background-color: #484F68FF;
+  color: #E2E6F3FF;
+  border: 2px solid transparent;
+  border-radius: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 8px;
+  padding-right: 12px;
+  min-width: 160px;
+  max-width: 45%;
   display: flex;
+  gap: 12px;
   place-items: center;
   place-content: left;
-  gap: 1em;
-  width: 45%;
+  position: relative;
+  transition: border-color 0.5s, background-color 0.5s;
 }
 
-.langentry img {
+.langentry:hover {
+  border-color: #646CFFFF;
+  background-color: #5F6888FF;
+}
+
+.langentryleft img {
   height: 64px;
-  margin: 8px;
+}
+
+.langentryleft {
+  min-width: 128px;
+}
+
+.langentryright {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.relatedtech {
+  font-weight: bold;
 }
 
 .otherentrybox {

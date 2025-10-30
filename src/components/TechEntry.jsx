@@ -1,10 +1,14 @@
-import Anchor from "../assets/anchor.png";
+import Anchor from "../assets/anchor-white.png";
 
 import SqlLogo from "../assets/sql-logo.svg";
 import MongoLogo from "../assets/mongodb-logo.svg";
 import DockerLogo from "../assets/docker-logo.svg";
 import GitLogo from "../assets/git-logo.svg";
 import AwsLogo from "../assets/aws-logo.png";
+
+import EntryDescription from "./EntryDescription";
+
+import { useSignal } from "@preact/signals";
 
 /* SQL (sub: PostgreSQL, MySQL), MongoDB, Docker, GitHub, AWS (not certified yet)*/
 /* Research, Analysis, Process Flow Diagrams, (anything else from CPET)*/
@@ -28,16 +32,40 @@ const TechImg = (name) => {
   }
 };
 
+const HandleClick = (currentState) => {
+  if (currentState) {
+    return false;
+  } else {
+    return true;
+  }
+};
+
 export default function TechEntry({ name, description, related = "None" }) {
+  const isDescDisplayed = useSignal(false);
+
   return (
-    <div className='langentry'>
-      <div>
+    <div
+      className='langentry'
+      onClick={() => {
+        isDescDisplayed.value = HandleClick(isDescDisplayed.value);
+      }}
+    >
+      <div className='langentryleft'>
         {TechImg(name)}
-        <h3>{name}</h3>
+        <h4>{name}</h4>
       </div>
-      <div>
-        <p>{description}</p>
-        <p>Related Technologies: {related}</p>
+      {isDescDisplayed.value ? (
+        <div className='langentrydesc'>
+          <EntryDescription
+            description={description}
+            related={"Related Technologies: " + related}
+          />
+        </div>
+      ) : (
+        <></>
+      )}
+      <div className='langentryright'>
+        {isDescDisplayed.value ? <p>&#11164;</p> : <p>&#11166;</p>}
       </div>
     </div>
   );
